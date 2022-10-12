@@ -1,3 +1,4 @@
+import React from "react";
 import './login.css'
 import heart from '../../img/el_heart.svg'
 import bar from '../../img/bar.svg'
@@ -34,7 +35,8 @@ function Login(){
                     </div>
                     <div className='row'>
                         <img src={left}></img>
-                        <img className='btn' src={login}></img>
+
+                        <img className='btn' src={login} onClick={()=>{alert('비밀번호가 정확하지 않습니다 다시 시도해주세요')}}></img>
                         <img src={right}></img>
                     </div>
                 </div>
